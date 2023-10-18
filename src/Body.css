@@ -1,0 +1,127 @@
+#hero-text-wrapper {
+    position: relative;
+    height: 1em;
+    display: flex;
+    align-items: center;
+  }
+  
+  #green-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(14 160 220);
+    border-radius: 9999px;
+    animation: moveBackground 6s linear infinite, fadeInOut 6s linear infinite;
+  }
+  
+  .hero-text {
+    color: white;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeInOut 6s linear infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .word.visible {
+    display: inline;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes moveBackground {
+    0% {
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+    50% {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    51% {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1; /* Words fade in from 20% to 25% of the animation duration */
+    }
+    80% {
+      opacity: 1; /* Words stay visible from 75% to 80% of the animation duration */
+    }
+    100% {
+      opacity: 0; /* Words fade out at the end of the animation */
+    }
+  }
+  
+  .big-headline {
+    margin: 1px;
+    font-size: clamp(4rem, 7.8vw, 11.25rem);
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: rgb(14 160 220);
+    color: white;
+  }
+  .font {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  .p1 {
+    margin-top: 35px;
+    font-size: clamp(1rem, 2.1vw, 3rem);
+  }
+  .aboutus {
+    width: 50%;
+    margin-left: auto;
+  }
+  .container-1 {
+    margin-left: auto;
+  }
+  
+  

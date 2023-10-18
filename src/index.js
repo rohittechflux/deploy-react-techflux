@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
+import BodyComponent from './Body';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 
@@ -10,6 +10,7 @@ root.render(
   <React.StrictMode>
 
    < Header/>
+   <BodyComponent/>
   </React.StrictMode>
 );
 
