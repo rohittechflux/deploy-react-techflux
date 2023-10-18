@@ -1,0 +1,176 @@
+body {
+    margin: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .header {
+    margin-left: -11px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    padding: 11px 20px;
+    background-color: #ffffff;
+    padding-bottom: 9.5rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  .logo {
+    height: 47px;
+    width: 50px;
+    border-radius: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+  }
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .log {
+    width: 21px;
+    height: 57px;
+    display: inline-block;
+    color: #fff;
+    font-size: 37px;
+    transform: rotateZ(90deg);
+  }
+  
+  .menu-block {
+    margin-right: 667px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    border-radius: 38px;
+    width: 50px;
+    height: 50px;
+    transition: width 0.5s, opacity 0.5s ease;
+    background:rgb(14 160 220);
+    opacity: 1;
+    box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  
+  .green-transition {
+    animation: greenTransition 2s ease forwards, colorChange 1s ease forwards;
+  }
+  
+  @keyframes greenTransition {
+    0% {
+      background-color: rgb(14 160 220);
+    }
+    100% {
+      background-color: white;
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: white;
+    }
+    100% {
+      color: black; /* Change this to your desired text color */
+    }
+  }
+  
+  .open .menu-block {
+    width: 400px;
+    background-position: 100% 0;
+    padding: 10px;
+    opacity: 0.9;
+    /* Adjust opacity as needed */
+    /* Start the background at 100% to the right */
+  }
+  
+  .hamburger-menu {
+    flex-direction: column;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .bar {
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    margin: 7px 3px;
+  }
+  
+  .open .hamburger-menu .bar {
+    opacity: 0;
+  }
+  
+  .menu {
+    top: 50px;
+    left: 0;
+  
+    padding: 10px;
+  }
+  
+  .menu ul {
+    color: #000000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: bold; /* Add this line to make the text bold */
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li:hover {
+    color: rgb(14 160 220);
+  }
+  
+  .menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: transparent; /* Set initial background color to transparent */
+    transition: background-color 0.3s ease; /* Add transition for the background color */
+  }
+  
+  .menu li:hover::after {
+    background-color: rgb(14 160 220);
+  }
+  
+  .lets-talk-button {
+    margin: 12px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 29px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    right: 53px;
+    top: 45px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  .lets-talk-button:hover {
+    background-color:rgb(14 160 220);
+    color: #000000;
+  }
+  
