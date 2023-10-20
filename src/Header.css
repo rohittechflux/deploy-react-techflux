@@ -1,5 +1,5 @@
 body {
-    margin: 40px;
+    margin: 0px;
     font-size: 1rem;
     font-weight: 400;
     background-color: #fff;
@@ -7,16 +7,16 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .header {
-    margin-left: -11px;
-    margin-top: -20px;
+    margin-left: 60px;
+    margin-top: 36px;
     display: flex;
     align-items: center;
-    padding: 11px 20px;
+    padding: 15px 20px;
     background-color: #ffffff;
     padding-bottom: 9.5rem;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 0px;
     background-color: #ffffff;
   }
   

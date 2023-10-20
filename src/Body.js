@@ -4,7 +4,7 @@ import "./Body.css"; // Import the CSS file
 const words = [
   "Creative",
   "Detail Oriented",
-  "Incredibly Awesome Super Detailed",
+  "Incredibly Awesome Super",
 ];
 
 const BodyComponent = () => {
@@ -77,14 +77,8 @@ const BodyComponent = () => {
               className="relative overflow-hidden rounded-3xl"
             >
               <div className="lg:transition-transform lg:duration-500 cursor-pointer lg:hover:scale-110">
-                <div className="project-image">
-                  <img
-                    src="https://n2new-admin.north2.work/uploads/i_Phone_11_Pro_Mockup_bd23992bf3.jpg"
-                    width="1800"
-                    height="1080"
-                    alt="iPhone 11 Pro Mockup.jpg"
-                    className="lg:transition-opacity lg:duration-500 hidden lg:block opacity-100"
-                  />
+                <div className="image">
+               
                 </div>
                 <h2 className="absolute top-1/2 left-1/2 lg:top-0 lg:left-0 transform -translate-x-1/2 -translate-y-1/2 text-white big-headline opacity-0 hidden lg:block">
                   Showreel
@@ -137,6 +131,37 @@ const BodyComponent = () => {
     </div>
   </div>
 </section>
+<section className="process-section">
+      <div className="process-container">
+        <h2 className="process-title">Process & Approach</h2>
+        <ul className="process-list">
+          <li className="process-item">
+            <span className="process-step">1.</span>
+            <span className="process-heading">Discover</span>
+            <p className="process-description">Get to know your business, goals, and audience. Conduct research and analysis for insights.</p>
+          </li>
+          <li className="process-item">
+            <span className="process-step">2.</span>
+            <span className="process-heading">Design</span>
+            <p className="process-description">Translate ideas into visual concepts. Create wireframes, style guides, and interactive prototypes.</p>
+          </li>
+          <li className="process-item">
+            <span className="process-step">3.</span>
+            <span className="process-heading">Develop</span>
+            <p className="process-description">Bring designs to life using latest technologies. Create a responsive, fast, and functional website.</p>
+          </li>
+          <li className="process-item">
+            <span className="process-step">4.</span>
+            <span className="process-heading">Improve</span>
+            <p className="process-description">Collect user feedback, track performance, and make data-driven improvements over time.</p>
+          </li>
+        </ul>
+      </div>
+      <div className="process-info">
+        <p>For over a decade, we've been delivering epic user experiences that will amaze you.</p>
+        <small>Since 2011</small>
+      </div>
+    </section>
 
     </div>
   );
