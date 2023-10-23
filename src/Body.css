@@ -241,6 +241,7 @@
   text-align: center;
   margin: 0;
   /* Remove margin */
+  overflow: hidden; /* Hide overflow to prevent page size changes */
 }
 
 .process-container {
@@ -262,7 +263,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end; /* Align items to the end of the container */
 }
 
 .process-item {
@@ -270,31 +271,31 @@
   margin-top: 46px;
   background-color: black;
   padding: 5rem;
-  border-radius: 132px;
+  border-radius: 180px;
   margin-bottom: 0rem;
-  width: 50%;
+  width: 80%;
   max-width: 1240px;
   text-align: left;
   border: 2px solid white;
   box-sizing: border-box;
   overflow: hidden;
   /* Initial width, hides half of the item */
-  transition: width 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth transition for transform property */
+  transform: translateX(50%); /* Move item to the left by 50% of its own width */
 }
 
 .process-item:hover {
-  width: 100%;
-  /* Fully reveal the item on hover */
+  transform: translateX(0); /* Fully reveal the item on hover and maintain position */
 }
 
 .process-step {
-  font-size: 1.25rem;
+  font-size: 6rem;
   color: #52D766;
   margin-right: 1rem;
 }
 
 .process-heading {
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
