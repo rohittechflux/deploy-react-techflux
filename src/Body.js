@@ -1,11 +1,22 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Body.css"; // Import the CSS file
+import ProjectDetails from './ProjectDetails';
 
 const words = [
   "Creative",
   "Detail Oriented",
   "Incredibly Awesome Super",
 ];
+const projects = [
+  {
+    title: 'CMG',
+    description:
+      'CMG Digital is a full-service digital design & production agency that empowers leading global brands to deliver their messages to the digital doorstep of the world\'s consumers. CMG Digital specializes in creating innovative digital solutions, including web design, mobile apps, and interactive media.',
+  },
+  
+  // Add more projects here following the same structure
+];
+
 
 const BodyComponent = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -78,6 +89,7 @@ const BodyComponent = () => {
             >
               <div className="lg:transition-transform lg:duration-500 cursor-pointer lg:hover:scale-110">
                 <div className="image">
+                <img src="https://n2new-admin.north2.work/uploads/i_Phone_11_Pro_Mockup_bd23992bf3.jpg"/>
                
                 </div>
                 <h2 className="absolute top-1/2 left-1/2 lg:top-0 lg:left-0 transform -translate-x-1/2 -translate-y-1/2 text-white big-headline opacity-0 hidden lg:block">
@@ -112,25 +124,20 @@ const BodyComponent = () => {
         </div>
         </section>
         <section className="section">
-  <div className="headline">
-    <h1>OUR WORK</h1>
-  
-    
-  </div>
+      <div className="headline">
+        <h1>OUR WORK</h1>
+      </div>
 
-  <div className="project-image">
-    <img
-      src="https://n2new-admin.north2.work/uploads/test_2_efe2ea3f48.jpg"
-      alt="CMG Digital project"
-    />
-    <div className="project-details">
-      <h3 className="project-title">CMG.</h3>
-      <p className="project-description">
-        CMG Digital is a full-service digital design & production agency that empowers leading global brands to deliver their messages to the digital doorstep of the world's consumers. CMG Digital specializes in creating innovative digital solutions, including web design, mobile apps, and interactive media.
-      </p>
-    </div>
-  </div>
-</section>
+      {projects.map((project, index) => (
+        <div className="project-image" key={index}>
+          <img
+            src="https://n2new-admin.north2.work/uploads/test_2_efe2ea3f48.jpg"
+            alt={`Project ${index}`}
+          />
+          <ProjectDetails title={project.title} description={project.description} />
+        </div>
+      ))}
+    </section>
 <section className="process-section">
       <div className="process-container">
         <h2 className="process-title">Process & Approach</h2>
@@ -138,7 +145,8 @@ const BodyComponent = () => {
           <li className="process-item">
             <span className="process-step">1.</span>
             <span className="process-heading">Discover</span>
-            <p className="process-description">Get to know your business, goals, and audience. Conduct research and analysis for insights.</p>
+            <p className="process-description">Get to know your business, goals, and audience.
+             Conduct research and analysis for insights.</p>
           </li>
           <li className="process-item">
             <span className="process-step">2.</span>
