@@ -228,9 +228,13 @@
 }
 
 .image img {
-  width: 93vw;
-  /* Set width to 100% of viewport width */
+  border-radius: 66px;
+  margin-left: 250px;
+  width: 86vw;
   height: auto;
+
+  /* Set width to 100% of viewport width */
+ 
   /* Maintain aspect ratio */
 }
 
@@ -273,7 +277,7 @@
   padding: 5rem;
   border-radius: 180px;
   margin-bottom: 0rem;
-  width: 80%;
+  width: 90%;
   max-width: 1240px;
   text-align: left;
   border: 2px solid white;
@@ -287,6 +291,8 @@
 .process-item:hover {
   transform: translateX(0); /* Fully reveal the item on hover and maintain position */
 }
+
+
 
 .process-step {
   font-size: 6rem;
@@ -309,8 +315,8 @@
 }
 
 .process-info p {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: clamp(4rem,6.2vw,7.5rem);
+    line-height: 1.25;
 }
 
 .process-info small {

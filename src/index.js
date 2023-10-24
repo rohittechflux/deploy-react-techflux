@@ -4,6 +4,7 @@ import './index.css';
 import BodyComponent from './Body';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
+import Footer from './Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,7 @@ root.render(
 
    < Header/>
    <BodyComponent/>
-
+    <Footer/>
   </React.StrictMode>
 );
 

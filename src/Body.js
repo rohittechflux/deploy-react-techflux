@@ -10,12 +10,13 @@ const words = [
 const projects = [
   {
     title: 'CMG',
-    description:
-      'CMG Digital is a full-service digital design & production agency that empowers leading global brands to deliver their messages to the digital doorstep of the world\'s consumers. CMG Digital specializes in creating innovative digital solutions, including web design, mobile apps, and interactive media.',
+    description: 'CMG Digital is a full-service digital design & production agency...',
+    hasImage: true, // indicates whether the project has an image
   },
   
-  // Add more projects here following the same structure
+  
 ];
+
 
 
 const BodyComponent = () => {
@@ -124,20 +125,24 @@ const BodyComponent = () => {
         </div>
         </section>
         <section className="section">
-      <div className="headline">
-        <h1>OUR WORK</h1>
-      </div>
+  <div className="headline">
+    <h1>OUR WORK</h1>
+  </div>
 
-      {projects.map((project, index) => (
-        <div className="project-image" key={index}>
-          <img
-            src="https://n2new-admin.north2.work/uploads/test_2_efe2ea3f48.jpg"
-            alt={`Project ${index}`}
-          />
-          <ProjectDetails title={project.title} description={project.description} />
-        </div>
-      ))}
-    </section>
+  {projects.map((project, index) => (
+    <div className="project-image" key={index}>
+      {project.hasImage && (
+        <img
+          src="https://n2new-admin.north2.work/uploads/test_2_efe2ea3f48.jpg"
+         
+        />
+      )}
+      <ProjectDetails title={project.title} description={project.description} />
+      
+    </div>
+  ))}
+</section>
+
 <section className="process-section">
       <div className="process-container">
         <h2 className="process-title">Process & Approach</h2>

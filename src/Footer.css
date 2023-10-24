@@ -1,0 +1,79 @@
+/* Footer.css */
+
+.footer-container {
+    height: 650px; /* Set the desired height */
+    background-color: rgb(14 160 220);
+    color: white; /* Text color */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .headline {
+    font-size: 124px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-position 0.3s ease;
+    background-size: 200% auto;
+  }
+  
+  .headline:hover {
+    background-position: 100% 0;
+  }
+  
+  
+  
+  .description {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    display: inline-block;
+ 
+   background-color: rgb(14 160 220);;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ffffff80; /* Light green on hover */
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff80; /* Light green on hover */
+  }
+  .flex-cont {
+    
+    bottom: 0;
+    right: 0;
+    /* Add additional styling as needed */
+  }
