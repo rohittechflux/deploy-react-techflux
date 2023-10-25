@@ -1,0 +1,30 @@
+.project-details-container {
+  position: relative;
+}
+
+.project-info {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+  width: 500px; /* Set a maximum width for the project info box */
+  height: 600px; /* Set a maximum height for the project info box */
+}
+
+.project-title {
+  margin: 65px;
+  cursor: pointer;
+}
+
+.project-image-container {
+  overflow: hidden; /* Ensure the image stays within the rounded borders */
+}
+
+.project-image {
+  width: 80%;
+  margin-left: 320px;
+}

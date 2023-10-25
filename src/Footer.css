@@ -1,8 +1,8 @@
 /* Footer.css */
 
 .footer-container {
-    height: 650px; /* Set the desired height */
-    background-color: rgb(14 160 220);
+    height: 720px; /* Set the desired height */
+    background-color: rgb(255, 255, 255);
     color: white; /* Text color */
     padding: 40px;
     display: flex;
@@ -25,20 +25,15 @@
     padding: 20px;
   }
   
-  .headline {
+  .headline-1{
     font-size: 124px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-color: black;
     -webkit-background-clip: text;
     color: transparent;
     transition: background-position 0.3s ease;
     background-size: 200% auto;
   }
-  
-  .headline:hover {
-    background-position: 100% 0;
-  }
-  
   
   
   .description {
@@ -49,7 +44,7 @@
   .button {
     display: inline-block;
  
-   background-color: rgb(14 160 220);;
+
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -58,22 +53,39 @@
   }
   
   .button:hover {
-    background-color: #ffffff80; /* Light green on hover */
+    background-color:#1DA1F2; /* Light green on hover */
   }
-  
-  .social-icons a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+  .column-2 {
+
+    padding: 20px;
   }
-  
-  .social-icons a:hover {
-    color: #ffffff80; /* Light green on hover */
-  }
-  .flex-cont {
-    
-    bottom: 0;
-    right: 0;
-    /* Add additional styling as needed */
-  }
+  /* SocialMediaIcons.css */
+/*.social-icons {
+  margin-top: 500px;
+}*/
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons ul li {
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.social-icons ul li a {
+  color: #333;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons ul li a:hover {
+  color: #55acee; /* Twitter Blue color on hover */
+  transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+

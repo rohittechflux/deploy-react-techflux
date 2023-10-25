@@ -1,22 +1,32 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Body.css"; // Import the CSS file
+import VideoPlayer from "./VideoPlayer";
 import ProjectDetails from './ProjectDetails';
 
 const words = [
   "Creative",
   "Detail Oriented",
-  "Incredibly Awesome Super",
+  "Incredibly super",
 ];
 const projects = [
   {
     title: 'CMG',
-    description: 'CMG Digital is a full-service digital design & production agency...',
-    hasImage: true, // indicates whether the project has an image
+    description: 'Digital is a full-service digital design & production agency that empowers leading global brands to deliver their messages to the digital doorstep of the world consumers.',
   },
-  
-  
-  
+  {
+    title: 'Project 2',
+    description: 'Description for Project 2...',
+  },
+  {
+    title: 'Project 3',
+    description: 'Description for Project 3...',
+  },
+  {
+    title: 'Project 4',
+    description: 'Description for Project 4...',
+  },
 ];
+
 
 
 
@@ -67,46 +77,9 @@ const BodyComponent = () => {
           </h1>
         </div>
       </section>
-      <section className="section">
-        <div
-          data-fade-container=""
-          data-start="100%"
-          data-delay="1"
-          className="container"
-        >
-          <div
-            data-fade-item=""
-            style={{
-              translate: "none",
-              rotate: "none",
-              scale: "none",
-              opacity: 1,
-              visibility: "inherit",
-              transform: "translate(0px, 0px)",
-            }}
-          >
-            <div
-              data-cursor="play"
-              className="relative overflow-hidden rounded-3xl"
-            >
-              <div className="lg:transition-transform lg:duration-500 cursor-pointer lg:hover:scale-110">
-                <div className="image">
-                <img src="https://n2new-admin.north2.work/uploads/i_Phone_11_Pro_Mockup_bd23992bf3.jpg"/>
-               
-                </div>
-                <h2 className="absolute top-1/2 left-1/2 lg:top-0 lg:left-0 transform -translate-x-1/2 -translate-y-1/2 text-white big-headline opacity-0 hidden lg:block">
-                  Showreel
-                </h2>
-              </div>
-              <a
-                href="https://player.vimeo.com/video/459248842?h=d4b957d5e6&amp;controls=0"
-                aria-label="Open showreel video"
-                className="glightbox absolute top-0 left-0 w-full h-full lg:hidden lg:invisible lg:pointer-events-none"
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+              <VideoPlayer/>
+    
       <section className="aboutus">
         <div className="container-1">
           <div className="space">
@@ -129,20 +102,9 @@ const BodyComponent = () => {
   <div className="headline">
     <h1>OUR WORK</h1>
   </div>
-
-  {projects.map((project, index) => (
-    <div className="project-image" key={index}>
-      {project.hasImage && (
-        <img
-          src="https://n2new-admin.north2.work/uploads/test_2_efe2ea3f48.jpg"
-         
-        />
-      )}
-      <ProjectDetails title={project.title} description={project.description} />
-      
-    </div>
-  ))}
+  <ProjectDetails projects={projects} />
 </section>
+
 
 <section className="process-section">
       <div className="process-container">
